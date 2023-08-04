@@ -1,0 +1,15 @@
+<div *ngFor="let record of records">
+    <p>Name: {{ record.name }}</p>
+    <p>Age: {{ record.age }}</p>
+    <p>Blood Group: {{ record.bloodGroup }}</p>
+    <p>Dept: {{ record.department }}</p>
+    <button (click)="viewRecord(record)">View</button>
+  </div>
+  <div *ngIf="selectedRecord">
+    <h2>Selected Record</h2>
+    <p>Name: {{ selectedRecord.name }}</p>
+    <p>Age: {{ selectedRecord.age }}</p>
+    <p>Blood Group: {{ selectedRecord.bloodGroup }}</p>
+    <p>Dept: {{ selectedRecord.department }}</p>
+  </div>
+  
